@@ -34,7 +34,7 @@ function Component(){
         return(
             //Main Container here
             <div className="min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 flex flex-col items-center justify-center">
-                <div className="text-white text-center mb-10 hover:animate-wiggle">
+                <div className="text-white text-center mb-10 hover:animate-pulse">
                     <h1 className="font-dancing text-8xl text-white">To do List Checker</h1>
                     <p className="text-gray-100 font-sans">Organize task in a vibrant way</p>
                 </div>
@@ -55,7 +55,7 @@ function Component(){
                         <ul>
                            {newTask.map((task, index) => (
                             <li key={index}
-                                className="transition-transform duration-200 hover:scale-125 flex items-center justify-between text-white w-90 bg-white/10 rounded-lg mt-3 mb-2 py-4 px-2"
+                                className="animate-slideUp transition-transform duration-500 ease-in-out flex items-center justify-between text-white w-90 bg-white/10 rounded-lg mt-3 mb-2 py-4 px-2"
                             >
                                 <span className="font-inter flex-1 pr-4 break-words whitespace-normal line-clamp-2">{task}</span>
                                 <div className="flex gap-3 ml-10 shrink-0 self-start">
